@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# build functions
-echo "Building functions with rollup"
-cd code
-./build_code.sh
-cd ..
+cd frontend
+npm install
+npm run generate
+mv dist ../
